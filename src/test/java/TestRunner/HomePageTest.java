@@ -27,14 +27,14 @@ public class HomePageTest extends BaseClass {
 	
 	@BeforeTest
 	public void setUp() throws MalformedURLException {
-		setup();//initalise browser
-		System.out.println("browser opened---PASSED");
+		setup();//initialise browser
+		System.out.println("browser opened");
 	}
 	
 	@AfterTest
 	public  void tearDown() {
 		driver.close();
-		System.out.println("browser CLOSED---PASSED");
+		System.out.println("browser CLOSED");
 	}
 
 	@Test(priority=0)
@@ -45,7 +45,7 @@ public class HomePageTest extends BaseClass {
 		hm.all().click();
 		//implicit wait 
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		System.out.println("click on ALL ---PASSED");		
+			
 	}
 	@Test(priority=1)
 	public void clickOnElectronic() throws InterruptedException
@@ -53,8 +53,7 @@ public class HomePageTest extends BaseClass {
 		homePage hm = new homePage();
 		//click on the electronics opton
 		Thread.sleep(3000);
-		hm.electronics().click();
-		System.out.println("click on ELECTRONICS ---PASSED");		
+		hm.electronics().click();			
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);		
 	}
 	
@@ -63,13 +62,8 @@ public class HomePageTest extends BaseClass {
 	{
 		//selecting tv and other appliances option
 		homePage hm = new homePage();
-		//WebDriverWait wait = new WebDriverWait(driver, null);
-		//wait.until(ExpectedConditions.visibilityOf(hm.tv()));
-		
 		Thread.sleep(2000);
 		hm.tv().click();
-		System.out.println("click on TV ---PASSED");	
-		//Wait wait= new WebDriverWait(driver);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
 	
@@ -79,7 +73,7 @@ public class HomePageTest extends BaseClass {
 		//select tv from other options
 		homePage hm = new homePage();
 		hm.Televisions().click();
-		System.out.println("click on Televisions ---PASSED");		
+		
 	}
 	
 	@Test(priority=4)
@@ -88,34 +82,34 @@ public class HomePageTest extends BaseClass {
 		//check the checkbox for SAMSUNG brand 
 		homePage hm = new homePage();
 		hm.samsung().click();
-		System.out.println("click on samsung ---PASSED");		
+		
 	}
 	@Test(priority=5)
 	public void sort()
 	{
 		//click on the sorting menu 
 		homePage hm = new homePage();
-		hm.sort().click();
-		System.out.println("click on sort ---PASSED");		
+		hm.sort().click();	
 	}
+	
 	@Test(priority=6)
 	public void highToLow()
 	{
 		//sort by price : high to low
 		homePage hm = new homePage();
-		hm.highToLow().click();
-		System.out.println("sort Price ---PASSED");		
+		hm.highToLow().click();	
 	}
+	
 	@Test(priority=7)
 	public void selectSecondItem()
 	{
 		//select the second last highest price item from the list 
 		homePage hm = new homePage();
-		hm.secondItem().click();
-		System.out.println("select second highest product ---PASSED");		
+		hm.secondItem().click();		
 	}
+	
 	@Test(priority=8)
-	public void getBack()
+	public void goBackToPreviousPage()
 	{
 		//navigating to the previous page 
 		driver.navigate().back();
@@ -124,16 +118,16 @@ public class HomePageTest extends BaseClass {
 	@Test(priority=9)
 	public void scrolldown()
 	{
+		//using js to scroll down vertically 
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,250)", "");
-		System.out.println("scroll down ---PASSED");	
+		js.executeScript("window.scrollBy(0,250)", "");	
 	}
 	
 	
 	@BeforeClass
 	public void openTest()
 	{
-		//extent report 
+		//extent report create
 		report = new ExtentReports("C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Reports\\login.html", true);
 		test = report.startTest("amazon test report");		
 	}
@@ -141,6 +135,7 @@ public class HomePageTest extends BaseClass {
 	@AfterClass 
 	public  void closeTest()
 	{
+		//end report
 	  report.endTest(test);
 	  report.flush();		
 	}
