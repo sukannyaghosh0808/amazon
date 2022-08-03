@@ -33,7 +33,7 @@ public class HomePageTest extends BaseClass {
 	
 	@AfterTest
 	public  void tearDown() {
-		//driver.close();
+		driver.close();
 		System.out.println("browser CLOSED---PASSED");
 	}
 
