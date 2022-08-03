@@ -3,11 +3,19 @@ package BasePackage;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+
 
 public class BaseClass {
 	
@@ -46,12 +54,14 @@ public class BaseClass {
 			System.out.println("Please open a proper browser!");
 		}
 		
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("url"));//opening browser
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
 	}
 	}
+	
+
 	
 
 

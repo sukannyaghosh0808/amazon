@@ -5,9 +5,18 @@
     <classes>
       <class name="TestRunner.HomePageTest">
         <methods>
+          <include name="scrolldown"/>
+          <include name="closeTest"/>
+          <include name="getBack"/>
+          <include name="samsung"/>
           <include name="tearDown"/>
-          <include name="clickAll"/>
+          <include name="highToLow"/>
+          <include name="selectSecondItem"/>
+          <include name="selectTV"/>
+          <include name="sort"/>
           <include name="setUp"/>
+          <include name="openTest"/>
+          <include name="Televisions"/>
         </methods>
       </class> <!-- TestRunner.HomePageTest -->
     </classes>

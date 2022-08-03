@@ -12,7 +12,7 @@ public class homePage extends BaseClass{
 	WebElement all;
 	@FindBy(xpath="//a[@data-menu-id='5']")
 	WebElement electronics;
-	@FindBy(xpath="//a[text()='Television & Video']")
+	@FindBy(xpath="//ul[@data-menu-id='5']/li[15]")
 	WebElement tv;
 	@FindBy(xpath="//span[text()='Televisions']")
 	WebElement Televisions;
