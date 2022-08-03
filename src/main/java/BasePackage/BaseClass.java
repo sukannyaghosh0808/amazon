@@ -11,6 +11,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -55,6 +56,8 @@ public class BaseClass {
 		cap.setBrowserName("chrome"); //setting up browser 
 		cap.setPlatform(Platform.WIN10); //setting up platform
 		driver = new RemoteWebDriver(new URL("http://192.168.1.102:4444/wd/hub"),cap);
+		
+		System.out.println("opening node in the browser -- "+ Browser.CHROME +" and platform = "+Platform.WIN10 );
 		}
 		else if(browserName.equalsIgnoreCase("chrome") && platform.equalsIgnoreCase("mac"))
 		{
@@ -63,6 +66,8 @@ public class BaseClass {
 			cap.setBrowserName("chrome"); //setting up browser 
 			cap.setPlatform(Platform.MAC); //setting up platform
 			driver = new RemoteWebDriver(new URL("http://192.168.1.102:4444/wd/hub"),cap);
+			
+			System.out.println("opening node in the browser -- "+ Browser.CHROME +" and platform = "+Platform.MAC );
 		}
 		
 		

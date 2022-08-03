@@ -2,64 +2,64 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-04T01:13:16 IST" name="Default suite" finished-at="2022-08-04T01:13:49 IST" duration-ms="32081">
+  <suite started-at="2022-08-04T01:27:37 IST" name="Default suite" finished-at="2022-08-04T01:28:08 IST" duration-ms="30597">
     <groups>
     </groups>
-    <test started-at="2022-08-04T01:13:16 IST" name="Default test" finished-at="2022-08-04T01:13:49 IST" duration-ms="32081">
+    <test started-at="2022-08-04T01:27:37 IST" name="Default test" finished-at="2022-08-04T01:28:08 IST" duration-ms="30597">
       <class name="TestRunner.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:16 IST" name="setUp" finished-at="2022-08-04T01:13:22 IST" duration-ms="5947" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:37 IST" name="setUp" finished-at="2022-08-04T01:27:43 IST" duration-ms="5893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="openTest()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:22 IST" name="openTest" finished-at="2022-08-04T01:13:23 IST" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="openTest()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:43 IST" name="openTest" finished-at="2022-08-04T01:27:43 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTest -->
-        <test-method signature="clickAll()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:23 IST" name="clickAll" finished-at="2022-08-04T01:13:24 IST" duration-ms="1184" status="PASS">
+        <test-method signature="clickAll()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:43 IST" name="clickAll" finished-at="2022-08-04T01:27:45 IST" duration-ms="1075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAll -->
-        <test-method signature="clickOnElectronic()[pri:1, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:24 IST" name="clickOnElectronic" finished-at="2022-08-04T01:13:27 IST" duration-ms="3270" status="PASS">
+        <test-method signature="clickOnElectronic()[pri:1, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:45 IST" name="clickOnElectronic" finished-at="2022-08-04T01:27:48 IST" duration-ms="3274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnElectronic -->
-        <test-method signature="selectTV()[pri:2, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:27 IST" name="selectTV" finished-at="2022-08-04T01:13:33 IST" duration-ms="6155" status="PASS">
+        <test-method signature="selectTV()[pri:2, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:48 IST" name="selectTV" finished-at="2022-08-04T01:27:54 IST" duration-ms="6155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTV -->
-        <test-method signature="Televisions()[pri:3, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:33 IST" name="Televisions" finished-at="2022-08-04T01:13:36 IST" duration-ms="2550" status="PASS">
+        <test-method signature="Televisions()[pri:3, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:54 IST" name="Televisions" finished-at="2022-08-04T01:27:57 IST" duration-ms="3325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Televisions -->
-        <test-method signature="samsung()[pri:4, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:36 IST" name="samsung" finished-at="2022-08-04T01:13:36 IST" duration-ms="616" status="PASS">
+        <test-method signature="samsung()[pri:4, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:57 IST" name="samsung" finished-at="2022-08-04T01:27:58 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- samsung -->
-        <test-method signature="sort()[pri:5, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:36 IST" name="sort" finished-at="2022-08-04T01:13:38 IST" duration-ms="1906" status="PASS">
+        <test-method signature="sort()[pri:5, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:58 IST" name="sort" finished-at="2022-08-04T01:27:59 IST" duration-ms="1330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sort -->
-        <test-method signature="highToLow()[pri:6, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:38 IST" name="highToLow" finished-at="2022-08-04T01:13:39 IST" duration-ms="226" status="PASS">
+        <test-method signature="highToLow()[pri:6, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:59 IST" name="highToLow" finished-at="2022-08-04T01:27:59 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highToLow -->
-        <test-method signature="selectSecondItem()[pri:7, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:39 IST" name="selectSecondItem" finished-at="2022-08-04T01:13:45 IST" duration-ms="6458" status="PASS">
+        <test-method signature="selectSecondItem()[pri:7, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:27:59 IST" name="selectSecondItem" finished-at="2022-08-04T01:28:05 IST" duration-ms="5603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSecondItem -->
-        <test-method signature="getBack()[pri:8, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:45 IST" name="getBack" finished-at="2022-08-04T01:13:48 IST" duration-ms="2987" status="PASS">
+        <test-method signature="getBack()[pri:8, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:28:05 IST" name="getBack" finished-at="2022-08-04T01:28:07 IST" duration-ms="2662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBack -->
-        <test-method signature="scrolldown()[pri:9, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:48 IST" name="scrolldown" finished-at="2022-08-04T01:13:48 IST" duration-ms="60" status="PASS">
+        <test-method signature="scrolldown()[pri:9, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:28:07 IST" name="scrolldown" finished-at="2022-08-04T01:28:07 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrolldown -->
-        <test-method is-config="true" signature="closeTest()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:48 IST" name="closeTest" finished-at="2022-08-04T01:13:48 IST" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="closeTest()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:28:07 IST" name="closeTest" finished-at="2022-08-04T01:28:08 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:13:48 IST" name="tearDown" finished-at="2022-08-04T01:13:49 IST" duration-ms="210" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner.HomePageTest@2c1b194a]" started-at="2022-08-04T01:28:08 IST" name="tearDown" finished-at="2022-08-04T01:28:08 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
