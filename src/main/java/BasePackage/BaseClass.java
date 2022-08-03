@@ -40,19 +40,31 @@ public class BaseClass {
 		}
 		
 	}	
-		public static void setup() 
+		public static void setup() throws MalformedURLException 
 		{
 		String browserName = prop.getProperty("browser");
+		String platform=prop.getProperty("platform");
 		
-		if(browserName.equalsIgnoreCase("chrome"))
+		if(browserName.equalsIgnoreCase("chrome") && platform.equalsIgnoreCase("win10"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Drivers\\chromedriver.exe");
-			driver=new ChromeDriver();
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Drivers\\chromedriver.exe");
+			//driver=new ChromeDriver();
+			
+			//opening browser in windows10 chrome browser
+		DesiredCapabilities cap= new DesiredCapabilities();
+		cap.setBrowserName("chrome"); //setting up browser 
+		cap.setPlatform(Platform.WIN10); //setting up platform
+		driver = new RemoteWebDriver(new URL("http://192.168.1.102:4444/wd/hub"),cap);
 		}
-		else
+		else if(browserName.equalsIgnoreCase("chrome") && platform.equalsIgnoreCase("mac"))
 		{
-			System.out.println("Please open a proper browser!");
+			//opening browser in mac chrome browser
+			DesiredCapabilities cap= new DesiredCapabilities();
+			cap.setBrowserName("chrome"); //setting up browser 
+			cap.setPlatform(Platform.MAC); //setting up platform
+			driver = new RemoteWebDriver(new URL("http://192.168.1.102:4444/wd/hub"),cap);
 		}
+		
 		
 		driver.get(prop.getProperty("url"));//opening browser
 		driver.manage().window().maximize();
