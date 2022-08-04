@@ -8,13 +8,16 @@
           <include name="scrolldown"/>
           <include name="closeTest"/>
           <include name="samsung"/>
+          <include name="selectSecondItem"/>
+          <include name="selectTV"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
           <include name="highToLow"/>
           <include name="goBackToPreviousPage"/>
-          <include name="selectSecondItem"/>
+          <include name="clickOnElectronic"/>
           <include name="sort"/>
-          <include name="setUp"/>
           <include name="openTest"/>
+          <include name="Televisions"/>
         </methods>
       </class> <!-- TestRunner.HomePageTest -->
     </classes>
