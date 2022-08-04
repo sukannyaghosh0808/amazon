@@ -10,26 +10,35 @@ public class homePage extends BaseClass{
 	
 	@FindBy(xpath="//a[@id='nav-hamburger-menu']")
 	WebElement all;
-	@FindBy(xpath="//a[@data-menu-id='5']")
+	@FindBy(xpath="//a[@data-menu-id='9']")
 	WebElement electronics;
-	@FindBy(xpath="//ul[@data-menu-id='5']/li[15]")
-	WebElement tv;
-	@FindBy(xpath="//span[text()='Televisions']")
+	@FindBy(xpath="//ul[@data-menu-id='9']/li[3]/a[text()='Televisions']")
 	WebElement Televisions;
-	@FindBy(xpath="//li[@id='p_89/SAMSUNG']/span/a/div/label/i")
+	@FindBy(xpath="//*[text()='Brands']")
+	WebElement brands;
+	@FindBy(xpath="//*[@id=\"s-refinements\"]/div[20]/ul/li[3]/span/a/span")
 	WebElement samsung;
-	@FindBy(xpath="//*[@id='a-autoid-2']")
+	@FindBy(xpath="//*[@id='a-autoid-0-announce']")
 	WebElement sort;
 	@FindBy(xpath="//a[text()='Price: High to Low']")
 	WebElement highToLow;
 	@FindBy(xpath="//div[@data-index='2']")
 	WebElement secondItem;
+	@FindBy(xpath="//*[text()=' About this item ']")
+	WebElement aboutThisItem;
 	
+	public WebElement aboutThisItem()
+	{
+		return aboutThisItem;
+	}
 	public WebElement secondItem()
 	{
 		return secondItem;
 	}
-	
+	public WebElement brands()
+	{
+		return brands;
+	}
 	public WebElement highToLow()
 	{
 		return highToLow;
@@ -47,10 +56,7 @@ public class homePage extends BaseClass{
 	{
 		return electronics;
 	}
-	public WebElement tv()
-	{
-		return tv;
-	}
+	
 	public WebElement Televisions()
 	{
 		return Televisions;

@@ -1,9 +1,16 @@
 package TestRunner;
 
+import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
+
 import java.net.MalformedURLException;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,6 +22,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import BasePackage.BaseClass;
 import PageObjects.homePage;
@@ -24,6 +32,7 @@ public class HomePageTest extends BaseClass {
 	static homePage hm;
 	static ExtentReports report; 
 	static ExtentTest test;
+	static Set<String> handles;
 	
 	@BeforeTest
 	public void setUp() throws MalformedURLException {
@@ -33,7 +42,7 @@ public class HomePageTest extends BaseClass {
 	
 	@AfterTest
 	public  void tearDown() {
-		driver.close();
+		driver.quit();
 		System.out.println("browser CLOSED");
 	}
 
@@ -57,23 +66,21 @@ public class HomePageTest extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);		
 	}
 	
+
 	@Test(priority=2)
-	public void selectTV() throws InterruptedException
-	{
-		//selecting tv and other appliances option
-		homePage hm = new homePage();
-		Thread.sleep(2000);
-		hm.tv().click();
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	}
-	
-	@Test(priority=3)
 	public void Televisions()
 	{
 		//select tv from other options
 		homePage hm = new homePage();
 		hm.Televisions().click();
-		
+	}
+	@Test(priority=3)
+	public void scrollTillBrands()
+	{
+		homePage hm = new homePage();
+		WebElement brand = hm.brands();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);",brand);	
 	}
 	
 	@Test(priority=4)
@@ -81,9 +88,9 @@ public class HomePageTest extends BaseClass {
 	{
 		//check the checkbox for SAMSUNG brand 
 		homePage hm = new homePage();
-		hm.samsung().click();
-		
+		hm.samsung().click();		
 	}
+	
 	@Test(priority=5)
 	public void sort()
 	{
@@ -101,26 +108,44 @@ public class HomePageTest extends BaseClass {
 	}
 	
 	@Test(priority=7)
-	public void selectSecondItem()
+	public void selectSecondItem() throws InterruptedException
 	{
 		//select the second last highest price item from the list 
 		homePage hm = new homePage();
 		hm.secondItem().click();		
+		handles=driver.getWindowHandles();
+		Thread.sleep(5000);
 	}
 	
 	@Test(priority=8)
-	public void goBackToPreviousPage()
-	{
-		//navigating to the previous page 
-		driver.navigate().back();
-	}
-	
-	@Test(priority=9)
 	public void scrolldown()
 	{
-		//using js to scroll down vertically 
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,250)", "");	
+		//Getting WindowHandles
+		homePage hm=new homePage();
+		WebElement aboutThisItem=hm.aboutThisItem();
+		
+		String parent=driver.getWindowHandle(); //getting current window handle
+		Set<String>s=driver.getWindowHandles(); //getting all handles
+		Iterator<String> I1= s.iterator();
+
+		while(I1.hasNext())
+		{
+
+		String child_window=I1.next();
+		if(!parent.equals(child_window))
+		{
+		       driver.switchTo().window(child_window);
+				//using js to scroll down vertically 							
+				JavascriptExecutor js = (JavascriptExecutor)driver;				
+				js.executeScript("arguments[0].scrollIntoView(true);",aboutThisItem);	//scroll till element is visible
+			}
+		}
+		   Boolean flag = hm.aboutThisItem().isDisplayed();
+			Assert.assertTrue(flag);
+			if(flag==true)
+			{
+				test.log(LogStatus.PASS, "About this item section is present");
+			}
 	}
 	
 	
@@ -128,7 +153,7 @@ public class HomePageTest extends BaseClass {
 	public void openTest()
 	{
 		//extent report create
-		report = new ExtentReports("C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Reports\\login.html", true);
+		report = new ExtentReports("C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Reports\\amazon.html", true);
 		test = report.startTest("amazon test report");		
 	}
 	

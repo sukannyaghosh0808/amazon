@@ -47,7 +47,7 @@ public class BaseClass {
 		String platform=prop.getProperty("platform");
 		String config=prop.getProperty("config");
 		
-		
+		//opening tests in the remote system
 	if(config.equalsIgnoreCase("grid"))
 	{
 		System.out.println("Running tests on remote........");
@@ -71,7 +71,7 @@ public class BaseClass {
 		}
 		
 	}
-	
+	//opening tests in the local machine
 	else if(config.equalsIgnoreCase("local") && browserName.equalsIgnoreCase("chrome"))
 	{
 		System.out.println("running tests in local machine........");
