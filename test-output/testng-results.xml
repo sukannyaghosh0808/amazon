@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="9" passed="0" failed="0" skipped="9">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-04T15:53:56 IST" name="Default suite" finished-at="2022-08-04T15:54:01 IST" duration-ms="4873">
+  <suite started-at="2022-08-04T17:57:09 IST" name="Default suite" finished-at="2022-08-04T17:57:16 IST" duration-ms="6439">
     <groups>
     </groups>
-    <test started-at="2022-08-04T15:53:56 IST" name="Default test" finished-at="2022-08-04T15:54:01 IST" duration-ms="4873">
+    <test started-at="2022-08-04T17:57:09 IST" name="Default test" finished-at="2022-08-04T17:57:16 IST" duration-ms="6439">
       <class name="TestRunner.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:53:56 IST" name="setUp" finished-at="2022-08-04T15:54:00 IST" duration-ms="4630" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:09 IST" name="setUp" finished-at="2022-08-04T17:57:16 IST" duration-ms="6212" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -42,8 +42,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -71,37 +73,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="openTest()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="openTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659608640819" status="SKIP">
+        <test-method is-config="true" signature="openTest()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="openTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659616036249" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTest -->
-        <test-method signature="clickAll()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="clickAll" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="clickAll()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="clickAll" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -114,8 +116,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -143,33 +147,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAll -->
-        <test-method signature="clickOnElectronic()[pri:1, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="clickOnElectronic" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="clickOnElectronic()[pri:1, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="clickOnElectronic" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -182,8 +186,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -211,33 +217,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnElectronic -->
-        <test-method signature="Televisions()[pri:2, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="Televisions" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="Televisions()[pri:2, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="Televisions" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -250,8 +256,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -279,33 +287,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Televisions -->
-        <test-method signature="scrollTillBrands()[pri:3, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="scrollTillBrands" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="scrollTillBrands()[pri:3, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="scrollTillBrands" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -318,8 +326,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -347,33 +357,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollTillBrands -->
-        <test-method signature="samsung()[pri:4, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="samsung" finished-at="2022-08-04T15:54:00 IST" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="samsung()[pri:4, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="samsung" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -386,8 +396,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -415,33 +427,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- samsung -->
-        <test-method signature="sort()[pri:5, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="sort" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="sort()[pri:5, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="sort" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -454,8 +466,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -483,33 +497,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sort -->
-        <test-method signature="highToLow()[pri:6, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="highToLow" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="highToLow()[pri:6, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="highToLow" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -522,8 +536,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -551,33 +567,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highToLow -->
-        <test-method signature="selectSecondItem()[pri:7, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="selectSecondItem" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="selectSecondItem()[pri:7, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="selectSecondItem" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -590,8 +606,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -619,33 +637,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSecondItem -->
-        <test-method signature="scrolldown()[pri:8, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:00 IST" name="scrolldown" finished-at="2022-08-04T15:54:00 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="scrolldown()[pri:8, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="scrolldown" finished-at="2022-08-04T17:57:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2]]>
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=104.0.5112.81)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f94b767b6893cdfd912f3c10c678e1a2, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52879/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f94b767b6893cdfd912f3c10c678e1a2
+Command: [8975d5dc1f14f00d2ff3dec0af32ec47, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUKANN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59815/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8975d5dc1f14f00d2ff3dec0af32ec47
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -658,8 +676,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at BasePackage.BaseClass.setup(BaseClass.java:81)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at BasePackage.BaseClass.setup(BaseClass.java:82)
 at TestRunner.HomePageTest.setUp(HomePageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -687,15 +707,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrolldown -->
-        <test-method is-config="true" signature="closeTest()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:01 IST" name="closeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659608641001" status="SKIP">
+        <test-method is-config="true" signature="closeTest()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="closeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659616036394" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T15:54:01 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659608641001" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner.HomePageTest@32502377]" started-at="2022-08-04T17:57:16 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1659616036396" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
