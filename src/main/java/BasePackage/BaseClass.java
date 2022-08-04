@@ -45,19 +45,20 @@ public class BaseClass {
 		{
 		String browserName = prop.getProperty("browser");
 		String platform=prop.getProperty("platform");
+		String config=prop.getProperty("config");
 		
+		
+	if(config.equalsIgnoreCase("grid"))
+	{
+		System.out.println("Running tests on remote........");
 		if(browserName.equalsIgnoreCase("chrome") && platform.equalsIgnoreCase("win10"))
 		{
-			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Drivers\\chromedriver.exe");
-			//driver=new ChromeDriver();
-			
 			//opening browser in windows10 chrome browser
-		DesiredCapabilities cap= new DesiredCapabilities();
-		cap.setBrowserName("chrome"); //setting up browser 
-		cap.setPlatform(Platform.WIN10); //setting up platform
-		driver = new RemoteWebDriver(new URL("http://192.168.1.102:4444/wd/hub"),cap);
-		
-		System.out.println("opening node in the browser -- "+ Browser.CHROME +" and platform = "+Platform.WIN10 );
+			DesiredCapabilities cap= new DesiredCapabilities();
+			cap.setBrowserName("chrome"); //setting up browser 
+			cap.setPlatform(Platform.WIN10); //setting up platform
+			driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444/wd/hub"),cap);
+			System.out.println("opening node in the browser -- "+ Browser.CHROME +" and platform = "+Platform.WIN10 );
 		}
 		else if(browserName.equalsIgnoreCase("chrome") && platform.equalsIgnoreCase("mac"))
 		{
@@ -65,16 +66,21 @@ public class BaseClass {
 			DesiredCapabilities cap= new DesiredCapabilities();
 			cap.setBrowserName("chrome"); //setting up browser 
 			cap.setPlatform(Platform.MAC); //setting up platform
-			driver = new RemoteWebDriver(new URL("http://192.168.1.102:4444/wd/hub"),cap);
-			
+			driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444/wd/hub"),cap);		
 			System.out.println("opening node in the browser -- "+ Browser.CHROME +" and platform = "+Platform.MAC );
 		}
 		
-		
+	}
+	
+	else if(config.equalsIgnoreCase("local") && browserName.equalsIgnoreCase("chrome"))
+	{
+		System.out.println("running tests in local machine........");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Drivers\\chromedriver.exe");
+		driver=new ChromeDriver();
+	}
 		driver.get(prop.getProperty("url"));//opening browser
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);		
 	}
 	}
 	
