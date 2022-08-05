@@ -4,6 +4,7 @@ import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 
 import java.net.MalformedURLException;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -53,7 +54,8 @@ public class HomePageTest extends BaseClass {
 		//clicking on the all hamburger sign
 		hm.all().click();
 		//implicit wait 
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+	//	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);-----------selenium 3
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			
 	}
 	@Test(priority=1)
@@ -61,9 +63,10 @@ public class HomePageTest extends BaseClass {
 	{
 		homePage hm = new homePage();
 		//click on the electronics opton
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 		hm.electronics().click();			
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);		
+				
 	}
 	
 
@@ -72,6 +75,7 @@ public class HomePageTest extends BaseClass {
 	{
 		//select tv from other options
 		homePage hm = new homePage();
+		WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(7));
 		hm.Televisions().click();
 	}
 	@Test(priority=3)
