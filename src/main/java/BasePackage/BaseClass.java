@@ -53,12 +53,18 @@ public class BaseClass {
 		System.out.println("Running tests on remote........");
 		if(browserName.equalsIgnoreCase("chrome") && platform.equalsIgnoreCase("win11"))
 		{
+			ChromeOptions options= new ChromeOptions();
+			//ChromeDriver driver1 = new ChromeDriver(options);
+			options.setPlatformName("win11");
 			//opening browser in windows10 chrome browser
 			DesiredCapabilities cap= new DesiredCapabilities();
-			cap.setBrowserName("chrome"); //setting up browser 
-			cap.setPlatform(Platform.WIN11); //setting up platform
+			
+			//cap.setBrowserName("chrome"); //setting up browser 
+			//cap.setPlatform(Platform.WIN11); //setting up platform
+			options.merge(cap);
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 			System.out.println("opening node in the browser -- "+ Browser.CHROME +" and platform = "+Platform.WIN11 );
+			
 		}
 		else if(browserName.equalsIgnoreCase("chrome") && platform.equalsIgnoreCase("mac"))
 		{
@@ -77,6 +83,7 @@ public class BaseClass {
 		System.out.println("running tests in local machine........");
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SUKANNYA GHOSH\\eclipse-workspace\\amazon\\Drivers\\chromedriver.exe");
 		driver =new ChromeDriver();
+		//driver manager
 	}
 		driver.get(prop.getProperty("url"));//opening browser
 		driver.manage().window().maximize();

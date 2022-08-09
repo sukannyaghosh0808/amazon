@@ -1,61 +1,881 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="0" failed="0" skipped="9">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-09T16:36:44 IST" name="Default suite" finished-at="2022-08-09T16:37:05 IST" duration-ms="20919">
+  <suite started-at="2022-08-09T17:07:33 IST" name="Default suite" finished-at="2022-08-09T17:07:34 IST" duration-ms="1494">
     <groups>
     </groups>
-    <test started-at="2022-08-09T16:36:44 IST" name="Default test" finished-at="2022-08-09T16:37:05 IST" duration-ms="20919">
+    <test started-at="2022-08-09T17:07:33 IST" name="Default test" finished-at="2022-08-09T17:07:34 IST" duration-ms="1494">
       <class name="TestRunner.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:44 IST" name="setUp" finished-at="2022-08-09T16:36:51 IST" duration-ms="6400" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:33 IST" name="setUp" finished-at="2022-08-09T17:07:34 IST" duration-ms="1414" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="openTest()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:51 IST" name="openTest" finished-at="2022-08-09T16:36:51 IST" duration-ms="315" status="PASS">
+        <test-method is-config="true" signature="openTest()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="openTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1660045054750" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTest -->
-        <test-method signature="clickAll()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:51 IST" name="clickAll" finished-at="2022-08-09T16:36:52 IST" duration-ms="799" status="PASS">
+        <test-method signature="clickAll()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="clickAll" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAll -->
-        <test-method signature="clickOnElectronic()[pri:1, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:52 IST" name="clickOnElectronic" finished-at="2022-08-09T16:36:52 IST" duration-ms="111" status="PASS">
+        <test-method signature="clickOnElectronic()[pri:1, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="clickOnElectronic" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnElectronic -->
-        <test-method signature="Televisions()[pri:2, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:52 IST" name="Televisions" finished-at="2022-08-09T16:36:53 IST" duration-ms="1045" status="PASS">
+        <test-method signature="Televisions()[pri:2, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="Televisions" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Televisions -->
-        <test-method signature="scrollTillBrands()[pri:3, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:53 IST" name="scrollTillBrands" finished-at="2022-08-09T16:36:54 IST" duration-ms="849" status="PASS">
+        <test-method signature="scrollTillBrands()[pri:3, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="scrollTillBrands" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollTillBrands -->
-        <test-method signature="samsung()[pri:4, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:54 IST" name="samsung" finished-at="2022-08-09T16:36:54 IST" duration-ms="526" status="PASS">
+        <test-method signature="samsung()[pri:4, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="samsung" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- samsung -->
-        <test-method signature="sort()[pri:5, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:54 IST" name="sort" finished-at="2022-08-09T16:36:56 IST" duration-ms="1423" status="PASS">
+        <test-method signature="sort()[pri:5, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="sort" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sort -->
-        <test-method signature="highToLow()[pri:6, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:56 IST" name="highToLow" finished-at="2022-08-09T16:36:58 IST" duration-ms="2439" status="PASS">
+        <test-method signature="highToLow()[pri:6, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="highToLow" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highToLow -->
-        <test-method signature="selectSecondItem()[pri:7, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:36:58 IST" name="selectSecondItem" finished-at="2022-08-09T16:37:03 IST" duration-ms="5206" status="PASS">
+        <test-method signature="selectSecondItem()[pri:7, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="selectSecondItem" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSecondItem -->
-        <test-method signature="scrolldown()[pri:8, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:37:03 IST" name="scrolldown" finished-at="2022-08-09T16:37:03 IST" duration-ms="186" status="PASS">
+        <test-method signature="scrolldown()[pri:8, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="scrolldown" finished-at="2022-08-09T17:07:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "server:CONFIG_UUID": "608e07fd-373e-4c01-8ef7-10d27f852c3c"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: unknown
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SUKANNYAG-WIN10', ip: '192.168.1.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at BasePackage.BaseClass.setup(BaseClass.java:65)
+at TestRunner.HomePageTest.setUp(HomePageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrolldown -->
-        <test-method is-config="true" signature="closeTest()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:37:03 IST" name="closeTest" finished-at="2022-08-09T16:37:04 IST" duration-ms="253" status="PASS">
+        <test-method is-config="true" signature="closeTest()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="closeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1660045054799" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T16:37:04 IST" name="tearDown" finished-at="2022-08-09T16:37:05 IST" duration-ms="1278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner.HomePageTest@1e1a0406]" started-at="2022-08-09T17:07:34 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1660045054801" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
