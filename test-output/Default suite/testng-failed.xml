@@ -8,14 +8,12 @@
           <include name="scrolldown"/>
           <include name="closeTest"/>
           <include name="samsung"/>
-          <include name="selectSecondItem"/>
-          <include name="clickAll"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
           <include name="highToLow"/>
-          <include name="clickOnElectronic"/>
+          <include name="selectSecondItem"/>
           <include name="scrollTillBrands"/>
           <include name="sort"/>
+          <include name="setUp"/>
           <include name="openTest"/>
           <include name="Televisions"/>
         </methods>

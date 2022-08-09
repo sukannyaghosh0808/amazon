@@ -16,7 +16,8 @@ public class homePage extends BaseClass{
 	WebElement Televisions;
 	@FindBy(xpath="//*[text()='Brands']")
 	WebElement brands;
-	@FindBy(xpath="//*[@id=\"s-refinements\"]/div[20]/ul/li[3]/span/a/span")
+//	@FindBy(xpath="//*[@id=\"s-refinements\"]/div[20]/ul/li[3]/span/a/span")
+	@FindBy(xpath="//span[text()='Samsung']")
 	WebElement samsung;
 	@FindBy(xpath="//*[@id='a-autoid-0-announce']")
 	WebElement sort;
